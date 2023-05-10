@@ -1,0 +1,68 @@
+class Futbolista {
+    private nombre: string;
+    private edad: number;
+    private equipo: string;
+    private posicion: string;
+  
+    constructor(
+      nombre: string = "",
+      edad: number = 0,
+      equipo: string = "",
+      posicion: string = ""
+    ) {
+      this.nombre = nombre;
+      this.edad = edad;
+      this.equipo = equipo;
+      this.posicion = posicion;
+    }
+  
+    getNombre(): string {
+      return this.nombre;
+    }
+  
+    setNombre(nombre: string): void {
+      this.nombre = nombre;
+    }
+  
+    getEdad(): number {
+      return this.edad;
+    }
+  
+    setEdad(edad: number): void {
+      this.edad = edad;
+    }
+  
+    getEquipo(): string {
+      return this.equipo;
+    }
+  
+    setEquipo(equipo: string): void {
+      this.equipo = equipo;
+    }
+  
+    getPosicion(): string {
+      return this.posicion;
+    }
+  
+    setPosicion(posicion: string): void {
+      this.posicion = posicion;
+    }
+  
+    getInfo(): string {
+      return `Nombre: ${this.nombre}, Edad: ${this.edad}, Equipo: ${this.equipo}, Posición: ${this.posicion}`;
+    }
+  }
+  
+  
+                                    const futbolista1 = new Futbolista();
+                                    futbolista1.setNombre("Lionel Messi");
+                                    futbolista1.setEdad(34);
+                                     futbolista1.setEquipo("Paris Saint-Germain");
+                                     futbolista1.setPosicion("Delantero");
+  
+                                    const futbolista2 = new Futbolista("Cristiano Ronaldo", 36);
+                                       futbolista2.setEquipo("Manchester United");
+                                       futbolista2.setPosicion("Delantero");
+  
+                                          console.log(futbolista1.getInfo());
+                                         console.log(futbolista2.getInfo());
